@@ -1,0 +1,273 @@
+<style>
+:root {
+  --opacity1: 0.5;
+  --opacity2: 0.5; 
+  --opacity3: 0.5;
+}
+
+#parallax { 
+    /* The image used */
+    background-image: url("parallax.jpg");
+
+    /* Set a specific height */
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: relative;
+    /*background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+#parallax2 { 
+    /* The image used */
+    background-image: url("example.png");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#parallax3 { 
+    /* The image used */
+    background-image: url("fond.png");
+
+    /* Set a specific height */
+    height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.topcolor {
+	/* background: rgba(77,185,73,	var(--opacity1)); */
+	background: rgba(0,0,0,	var(--opacity1));
+	height: 100%;
+	width: 100%;
+}
+
+.topcolor2 {
+	/*background: rgba(2,154,151,var(--opacity2));*/
+	background: rgba(0,0,0,	var(--opacity2));
+	height: 100%;
+	width: 100%;
+}
+
+.topcolor3 {
+	/*background: rgba(2,154,151,var(--opacity3));*/
+	background: rgba(0,0,0,	var(--opacity3));
+	height: 100%;
+	width: 100%;
+}
+
+.presentation {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	  text-align: center;
+	  max-width: 1000px;
+	  width: 100%;
+	  margin-right: auto;
+	  margin-left: auto;
+	  color: white;
+}
+
+body {
+	/*background-image:linear-gradient(#3D3D3D, black);*/
+	background-image:linear-gradient(#0A0A0A, black);
+	text-align: center;
+}
+
+.video {
+  position: relative;
+	padding-top: 30px;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;  top: 50%; /* poussé de la moitié de hauteur du référent */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+.video iframe,  
+.video object,  
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.video-wrapper {
+	width: 800px;
+	max-width: 100%;
+	margin-left: auto; margin-right: auto;
+	height: 100%;
+}
+
+
+.slideshow {
+	position: relative;
+	margin-left: auto; margin-right: auto;
+	max-height: 500px;
+	max-width: 911px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.container{
+	max-width: 1000px;
+	margin-right: auto; margin-left: auto;
+}
+.column-left{float: left; width: 33%;}
+.column-right{float: right; width: 33%; }
+.column-center{display: inline-block; width: 33%; }
+img {
+	max-width:100%;
+	max-height:100%;
+}
+</style>
+
+<!-- Container element -->
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<!-- Parrallax -->
+<body>
+<div id="parallax">
+	<div class="topcolor">
+	<!-- Video youtube -->
+		<div class="video-wrapper">
+			<div class="video">
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/Ic5cp4C3QdM?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Game description -->
+<div class="presentation">
+<section class="w3-container w3-center">
+	<h2 class="w3-wide">THE GAME</h2>
+	<p class="w3-opacity"><i>
+	<p>Play with your friends (or with Companions Particularly Unintelligent if you don’t have any) and challenge your friendship in hilarious no-hold barred matches to show who is the real “Jump Master”! Your objective is clear: the more heads you jump on, the more points you gets!</p>
+	<p>Your body weight isn’t your only weapon to fight your opponents; you can use a ridiculous but deadly arsenal to unleash your supremacy: wear a SM suit to win points when people jump on you, use your underpants to blind your rivals, recreate the “You Shall not Pass!” scene with a shockwave fart, summon Nyancats, cheese slices and twitter birds falling from the sky and more!</p>
+
+	<p>Participate in crazy game modes and add a new twist to your brawls: be a selfie addict and win point by jumping in the frame each time a picture is taken, avoid a rain of explosive dog poop or brawl in a place where time is completely broken!</p></i></p>
+</section>
+</div>
+
+<!-- Parallax 2 -->
+<div id="parallax2">
+	<div class="topcolor2">
+		<div class="container">
+	   <div class="column-center"><h3>Achievement 1</h3><p>Get this wonderful achievement!</p><img class="achievement" src="achievement_1.png"></div>
+	   <div class="column-left"><h3>Achievement 2</h3><p>Get this wonderful achievement!</p><img class="achievement" src="achievement_2.png"></div>
+	   <div class="column-right"><h3>Achievement 3</h3><p>Get this wonderful achievement!</p><img class="achievement" src="achievement_3.png"></div>
+		</div>
+	</div>
+</div>
+
+<!-- Slide Show -->
+<!-- Toutes les images doivent être de la même taille -->
+<div class="slideshow">
+<section>
+  <img class="mySlides" src="slide_3.png">
+  <img class="mySlides" src="slide_2.png">
+  <img class="mySlides" src="slide_1.png">
+</section>
+</div>
+<script>// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}</script>
+
+<!-- Parallax 3 -->
+<div id="parallax3"><div class="topcolor3"> </div></div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-center w3-black w3-xlarge">
+  <p><a href="#"><i class="fa fa-steam-square"></i></a>
+  <a href="https://www.facebook.com/JumpHead.Battle4Fun"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://twitter.com/jumphead_b4f"><i class="fa fa-twitter"></i></a>
+  <a href="mailto:davidaurelien@orange.fr"><i class="fa fa-envelope"></i></a>
+  <a href="http://www.e-neko.com/press/sheet.php?p=JumpHead:%20Battle4Fun!">presskit</a></p>
+  <p>
+  	<img class="logo" src="logo_team.png">
+  	<img class="logo" src="logo_neko.png">
+  </p>
+</footer>
+
+
+
+<!-- Parallax opacité -->
+<script type="text/javascript">
+// getElementById("parallax");
+
+var htmlStyles = window.getComputedStyle(document.querySelector("html"));
+var opacity1 = htmlStyles.getPropertyValue("--opacity1");
+var opacity2 = htmlStyles.getPropertyValue("--opacity2");
+var opacity3 = htmlStyles.getPropertyValue("--opacity3");
+window.addEventListener('scroll', Scroll)
+
+function Scroll(){
+	var para = document.getElementById('parallax');
+	var para2 = document.getElementById('parallax2');
+	var para3 = document.getElementById('parallax3');
+
+	var d = document;
+	var e = d.body;
+	var a = e.scrollTop;
+	var b = e.scrollHeight - e.clientHeight;
+
+	function setOpacity(parano)
+	{
+		var targetHeight = parano.offsetHeight;
+		var targetHeight2 = e.clientHeight;
+		var scrollPercent = 1 - (targetHeight - (window.scrollY - parano.offsetTop)) / targetHeight;
+		//return 0.5 + (scrollPercent/2);
+		return Math.max(0.5, 0.5 + (scrollPercent/2));
+	}
+
+	function setPosition(parano)
+	{
+		var targetHeight = parano.offsetHeight;
+		var targetHeight2 = e.clientHeight;
+		var scrollPercent = 1 - (targetHeight - (window.scrollY - parano.offsetTop)) / targetHeight2;
+		//return 0.5 + (scrollPercent/2);
+		return Math.max(0, scrollPercent);
+	}
+
+  para.style.backgroundPosition = "center " + (setPosition(para) * -50) + "px";
+  para2.style.backgroundPosition = "center " + (setPosition(para2) * -50) + "px";
+  para3.style.backgroundPosition = "center " + (setPosition(para3) * -50) + "px";
+
+	document.querySelector("html").style.setProperty("--opacity1", setOpacity(para));
+	document.querySelector("html").style.setProperty("--opacity2", setOpacity(para2));
+	document.querySelector("html").style.setProperty("--opacity3", setOpacity(para3));
+}
+</script>
+</body>
+</html>
